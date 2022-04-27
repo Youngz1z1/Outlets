@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Outlets Commodity</title>
+    <link rel="stylesheet" href="css/commodity.css">
+    <link rel="stylesheet" href="css/新品上市.css">
+    <link rel="stylesheet" href="css/主页-末尾.css">
+</head>
+
+<body>
+    <div style="width: 100%;font-size: 10px;"><a href="#">首页</a>-><a href="#">成衣</a>-><a href="#">连衣裙</a>-><a href="#">淡雅黄薄纱连衣裙</a></div>
+    <div style="width: 50%;height: 150%;float: left;text-align: center;background-color: rgb(219, 231, 235);">
+        <img src="imgic/展示框-黑衬衫.png" width="80%" alt="" style="margin-top: 12%;">
+    </div>
+    <div style="width: 50%;height: 150%;float: right;font-family: MingLiU;background-color: rgb(219, 231, 235);">
+        <p style="margin-top: 8%;font-size: 36px;font-family: 等线;font-weight: 400;">Outlets玄色T恤</p><br>
+        <font style="font-size: 24px;">￥1200.00</font>
+        <br><br>
+        <font style="font-size: 20px;">这款选黑色男女式衬衫，非常适合<br>酷炫女孩.
+            <a href="#T1">商品详情</a>
+        </font>
+        <BR><br>
+        <p class="iput">请选择尺码</p>
+        <form action="process.aspx" method="POST">
+            <select name="size" id="" aria-placeholder="请选择尺码" class="selcet">
+                <option value="">35</option>
+                <option value="">36</option>
+                <option value="">37</option>
+                <option value="">38</option>
+                <option value="">39</option>
+                <option value="">40</option>
+            </select>
+            <p class="iput">请选择颜色</p>
+            <select name="color" id="" aria-placeholder="请选择颜色" class="selcet">
+                <option value="">玄黑色</option>
+            </select>
+            <br>
+            <input type="submit" value="加入购物车" class="cart">
+            <a href="https://cart.taobao.com/cart.htm?spm=a2e0b.20350158.1997525049.1.70f6468aAaK3m7&from=mini&pm_id=1501036000a02c5c3739&pid=mm_26632258_3504122_32538762&union_lens=recoveryid%3A201_11.136.53.174_2120523_1621256158324%3Bprepvid%3A201_11.136.53.174_2120523_1621256158324&clk1=86cb4d4f0e3e1affd9e48ce4da79f2ce">
+            <input type="submit" value="立即购买" class="buying"></a>
+            <br><br>
+            在线选购尊享免费配送与退货
+            <br>
+            <a href="clothe-淡雅黄1.html">下一件商品-></a>
+        </form>
+
+    </div>
+    <div class="information">
+        <a name="T1"></a><input type="button" value="商品详情   /" onclick="left1()" class="color_b" id="btn"
+            style="margin-left: 60%;">
+        <div id="left" class="information-list">
+            这款粉笔白薄纱连衣裙凸显纯洁的气质，非常适合天气好的晚上的小型派对出演.<br><br>
+            A字廓形<br>
+            V字领<br>
+            披肩领<br>
+            侧面拉链拉合<br>
+            A字下摆<br>
+            长 85 cm 
+        </div>
+        <div class="may-like">
+            您可能会喜欢<br>
+            <div class="sale">
+                <div class="sale-commodity-left">
+                    <a href="#"><img src="imgic/新品上市-成衣1.png" height="270px" alt=""></a>
+                    <span class="price">￥750.00</span><br><br>
+                    <span class="intro">Outlets女士骆驼色圆领毛衣<br>MML397-1Xo4</span>
+                </div>
+                <div class="sale-commodity-unleft">
+                    <a href="#"><img src="imgic/新品上市-成衣2.png" height="270px" alt=""></a>
+                    <span class="price">￥1600.00</span><br><br>
+                    <span class="intro">Outlets女士白色褶薄纱半身裙<br>MG1540_E6V</span>
+                </div>
+                <div class="sale-commodity-unleft">
+                    <a href="#"><img src="imgic/新品上市-成衣3.png" height="270px" alt=""></a>
+                    <span class="price">￥465.00</span><br><br>
+                    <span class="intro">Outlets女士白色印花平纹针上衣<br>MJT397-1Xo4</span>
+                </div>
+                <div class="sale-commodity-unleft">
+                    <a href="#"><img src="imgic/新品上市-成衣4.png" height="270px" alt=""></a>
+                    <span class="price">￥4300.00</span><br><br>
+                    <span class="intro">Outlets女士粉笔白薄纱连衣裙<br>MF397-X</span>               </div>
+            </div>
+        </div>
+    </div>
+    <div class="information">
+        <input type="button" value="配送信息   /" onclick="mid1()" id="btn">
+        <div id="mid" class="information-list">
+            我们将在订单确认后的二至四个工作日内发货，您可在收货后七天内决定是否退货。<br>
+            在线选购尊享免费配送与退货。<br>
+            预售商品将在您收到支付成功短信之后的8个星期内进行配送。<br><br>
+            货号 MF4330_J3V_F0008
+        </div>
+        
+    </div>
+    <div class="information">
+        <input type="button" value="顾客服务   /" onclick="right1()" id="btn" style="margin-right: 60%;">
+        <div id="right" class="information-list">
+            400 606 1993<br>
+            周一至周日 9:00 - 20:00 请发邮件给我们
+        </div>
+    </div>
+
+</body>
+<script src="js/commodity.js"></script>
+
+</html>

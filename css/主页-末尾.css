@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.Last{
+    position: relative;
+    top:-150px;
+    margin-left: 8%;
+    margin-right: 10%;
+}
+.Last-search{
+    height: 60px;
+    width: 420px;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 0;
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+}
+.Last-submit{
+    height: 60px;
+    width: 80px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+    color: rgb(36, 36, 36);
+}
+.remarkbefore{
+    width: 100%;
+    height: 100px;
+    background-color: #aebdcc;
+    /* margin-top: -50px; */
+    /* line-height: 120px; */
+    /* padding-left: 120px; */
+    font-size: 32px;
+    font-family: Algerian;
+    color: azure;
+}
+.remarkbefore span{
+    padding-left: 8%;
+}
+.remark{
+    width: 100%;
+    height: 300px;
+    background-color: #aebdcc;
+    padding-top: 5px;
+}
+.remark-div{
+    width: 200px;
+    height: 200px;
+    padding-left: 8%;
+    float: left;
+}
+.remark-div a{
+    color: azure;
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+}
+.remark-div a:hover{
+    color: #fafafa;
+}
+.remark-div span{
+    font-size: 16px;
+    font-weight: bold;
+}

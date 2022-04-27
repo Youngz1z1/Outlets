@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: rgb(2, 2, 172);
+        }
+
+        body {
+            background-image: url(imgic/注册页.png);
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .register {
+            width: 450px;
+            margin: 0px auto;
+            padding-top: 20px;
+            font-size: 30px;
+            line-height: 40px;
+            align-self: center;
+            border-radius: 10px;
+            background-color: rgba(77, 77, 77, 0.699);
+            margin-top: 10%;
+            margin-right: 5%;
+        }
+
+        .register input {
+            height: 45px;
+            font-size: 15;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            color: rgb(43, 43, 43);
+            font-family: bold;
+            width: 90%;
+            padding-left: 10px;
+            margin-top: 15px;
+            border: 0;
+
+        }
+
+        .imgic {
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.411);
+            margin-top: 20px;
+        }
+    </style>
+    <script type="text/javascript" src="js/register.js"></script>
+    <script type="text/javascript">
+        function validForm() {
+            var userName = document.getElementById("userName");
+            var pwd = document.getElementById("pwd");
+            var repwd = document.getElementById("repwd");
+            var email = document.getElementById("email");
+            if (!validate_required(userName)) {
+                alert("用户名不能为空")
+                return false;
+            }
+            if(!validate_required(pwd)) {
+                alert("密码不能为空")
+                return false;
+            }
+            if (!valid_character(userName.value.charAt(0))) {
+                alert("用户名首字符不能是数字");
+                return false;
+            }
+            // if (!validate_research(research)) {
+            //     alert("验证码输入错误")
+            //     return false;
+            // }
+            if (!valid_length(userName.value, 6, 18)) {
+                alert("用户名长度在6~18之间");
+                return false;
+            }
+            if (!valid_email(email.value)) {
+                alert("邮箱格式不正确");
+                return false;
+            }
+            alert("登录成功，为您跳转到主页！")
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="register">
+        <center>
+            <form action="index.html" method="post" id="loginForm" name="loginForm" onsubmit="return validForm();">
+
+                <table cellpadding="10" cellspacing="0" style="width: 450px;">
+                    <tr>
+                        <td colspan="3">
+                            <a href="起始页.html"><img src="imgic/logo2.png" alt="" width="80px" height="45px"></a>
+                            <font style="font-family: 圆体;font-weight: bold;font-size: 44px;color: lightgrey;text-align: left;">
+                                用户名密码登录</font><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="40"><img src="imgic/姓名 用户名 昵称.png" alt="" class="imgic"></td>
+                        <td colspan="2"><input id="userName" name="userName" type="text" tabindex="1" placeholder="用户名"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgic/密码.png" class="imgic"></td>
+                        <td colspan="2"><input type="password" name="pwd" id="pwd" tabindex="2" placeholder="密码"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgic/邮箱.png" class="imgic" alt=""></td>
+                        <td style="width: 50%;"><input type="text" name="email" id="email" tabindex="3" placeholder="E-mail"></td>
+                        <td><input type="button" id="resach" name="resach" value="发送验证码" style="width: 75%;"></td>
+                    </tr>
+                    <!-- <tr>
+                        <td><img src="imgic/验证码.png" class="imgic" alt=""></td>
+                        <td><input type="text" id="research" name="research" tabindex="4" placeholder="验证码" style="width: 60%;">
+                        </td><td>
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td colspan="3">
+                            <p><input type="submit" id="btlogin" tabindex="4" value="登录" style="width: 92%;background-color: rgba(24, 149, 252, 0.527);border: 0px;"></p>
+                            <a href="#" style="text-align: left;font-size: 10px;color: lightgrey;font-weight: bold;">阅读并接受《奥特莱斯用户协议》</a>
+                            <a href="注册.html" style="float: right;text-align: right;font-size: 10px;color: lightgrey;font-weight: bold;">注册账号</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </div>
+</body>
+
+</html>

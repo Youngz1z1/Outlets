@@ -1,0 +1,32 @@
+a{
+    text-decoration: none;
+}
+.abs{
+    font-weight: 200;
+}
+.abs tr{
+    height: 40px;
+}
+.abs td{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(27, 27, 27);
+}
+.abs th{
+    font-size: 20px;
+    background-color: rgba(89, 151, 243, 0.767);;
+}
+.exchange{
+    width: 120px;
+    height: 45px;
+    font-size: 24px;
+    color:rgb(41, 41, 41);
+    margin-top: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    transition: 0.5s all ease-in-out;
+}
+.exchange:hover{
+    transform: scale(1.2);
+}
